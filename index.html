@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NU.nl News Widget</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="news-widget">
+        <header class="widget-header">
+            <img class="source-logo" src="assets/logo.png" alt="NU.nl">
+            <p class="source-label">Bron: <strong>NU - Algemeen</strong></p>
+        </header>
+
+        <p class="widget-status">Loading news…</p>
+
+        <section class="news-list"></section>
+
+        <div class="page-progress" hidden>
+            <div class="page-progress-fill"></div>
+        </div>
+    </main>
+
+    <template class="news-card-template">
+        <article class="news-card">
+            <img class="news-image" alt="">
+            <div class="news-content">
+                <h2 class="news-title"></h2>
+                <p class="news-description"></p>
+            </div>
+        </article>
+    </template>
+</body>
+</html>
